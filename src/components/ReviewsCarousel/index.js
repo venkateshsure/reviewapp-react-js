@@ -34,11 +34,15 @@ class ReviewsCarousel extends Component {
         <div className="review-block">
           <h1 className="head">Reviews</h1>
           <div className="arrow-con">
-            <button className="but" data-testid="leftArrow" type="button">
+            <button
+              onClick={this.leftArrow}
+              className="but"
+              data-testid="leftArrow"
+              type="button"
+            >
               <img
                 alt="left arrow"
                 src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
-                onClick={this.leftArrow}
               />
             </button>
             <div className="img-user-con">
@@ -46,11 +50,15 @@ class ReviewsCarousel extends Component {
               <p className="para">{username}</p>
               <p className="para">{companyName}</p>
             </div>
-            <button className="but" data-testid="rightArrow" type="button">
+            <button
+              onClick={this.rightArrow}
+              className="but"
+              data-testid="rightArrow"
+              type="button"
+            >
               <img
                 alt="right arrow"
                 src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
-                onClick={this.rightArrow}
               />
             </button>
           </div>
