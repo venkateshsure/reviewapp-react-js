@@ -4,12 +4,13 @@ import {Component} from 'react'
 import './index.css'
 
 class ReviewsCarousel extends Component {
-  constructor(props) {
+  /* constructor(props) {
     super(props)
     this.state = {
       initial: 0,
     }
-  }
+  } */
+  state = {initial: 0}
 
   rightArrow = () => {
     const {reviewsList} = this.props
